@@ -1,0 +1,19 @@
+swimmers in lammps:
+
+Andersen thermostat - inside reset_velocities -
+   just redraw velocities from M-B
+   (we will have to do AT+a later on)
+   bigbin helps retrieve the identity of the big particle in a searchbin
+   In reset_velocities, when looping over the bins, check to see if there is a 
+   big particle in the cell (ibin, binbig).  Get the number of SRD cells in the 
+   cell, assign virtual particles, etc etc.!
+
+
+Swimmers - riff off 'noslip'.  Place the new positions like before, except add 
+    the surface velocities (instead of the tangent crap).
+
+
+
+calculate bin overlap 
+
+SRD 
